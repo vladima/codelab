@@ -14,7 +14,7 @@ package com.codelab.lca;
  * }
  */
 public class Solution {
-    class TreeNode {
+    public static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;
@@ -41,7 +41,7 @@ public class Solution {
         if (root.val == val2) {
             sawVal2 = true;
         }
-        
+
         TreeNode leftLca = findLca(root.left, val1, val2);
         TreeNode rightLca = findLca(root.right, val1, val2);
         if (root.val == val1 || root.val == val2) {
